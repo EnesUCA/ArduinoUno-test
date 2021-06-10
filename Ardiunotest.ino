@@ -7,13 +7,19 @@ int yesil = 10;
 int onay ;
 void setup() {
   // put your setup code here, to run once:
+  setupPinsMode();
   Serial.begin(9600);
   Serial.print("Tamamlandı");
-  mySerial.begin(9600);
+  mySerial.begin(9600);,
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 
 }
-
+void setupPinsMode(){
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+}
