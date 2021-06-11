@@ -18,6 +18,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(kirmizi, HIGH);   // Kirmizi led baslatıldı
   delay(20000);                  // 20 saniye kirmizi yaniyor
+  onay = digitalRead(kirmizi);
+  if(onay == true){
+    mySerial.print(onay);
+  }
   digitalWrite(kirmizi,LOW);     //Kirmizi led sonlandırıldı
   digitalWrite(sari, HIGH);  //Sari led baslatıldı
   delay(1500);            //1,5 saniye bekle  
