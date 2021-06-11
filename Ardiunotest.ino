@@ -16,11 +16,15 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(kirmizi, HIGH);   // Kirmizi ledi yak
+  digitalWrite(kirmizi, HIGH);   // Kirmizi led baslatıldı
   delay(20000);                  // 20 saniye kirmizi yaniyor
-  digitalWrite(sari, HIGH);  //Sari ledi yak
+  digitalWrite(kirmizi,LOW);     //Kirmizi led sonlandırıldı
+  digitalWrite(sari, HIGH);  //Sari led baslatıldı
   delay(1500);            //1,5 saniye bekle  
   digitalWrite(sari, LOW);   //Sari led sonlandırıldı
+  digitalWrite(yesil, HIGH); //Yesil led baslatıldı
+  delay(20000);             //20 saniye yesil yaniyor
+  digitalWrite(yesil, LOW); //Yesil led sonlandırıldı
 }
 void setupPinsMode(){
   pinMode(8, OUTPUT);
